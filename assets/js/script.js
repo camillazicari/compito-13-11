@@ -1,12 +1,13 @@
 const insertTask = document.getElementById("insertTask");
 const btnInvio = document.getElementById("btnInvio");
 const lista = document.getElementById("lista");
-const listaElements = [];
+const listaTasks = [];
 
 btnInvio.addEventListener("click", function (e) {
   e.preventDefault();
   if (!inputCheck()) return;
-  addTasks();
+  addTasksArray();
+  visualTasks();
 });
 
 function inputCheck() {
@@ -18,6 +19,15 @@ function inputCheck() {
   }
 }
 
-function addTasks() {
-  listaElements.push(insertTask.value);
+function addTasksArray() {
+  listaTasks.push(insertTask.value);
+}
+
+function visualTasks() {
+  lista.innerHTML = "";
+  for (let i = 0; i < listaTasks.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.innerText = listaTasks[i];
+    lista.appendChild(listItem);
+  }
 }

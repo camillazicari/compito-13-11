@@ -15,3 +15,8 @@ fieldset {
 #insertTask {
     width: 80%;
 }
+
+ul li {
+    text-align: start;
+    list-style: none;
+}
