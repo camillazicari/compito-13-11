@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My 'to do' list</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-    <h1>"TO DO" list</h1>
-    <form>
+  </head>
+  <body>
+    <div id="middle">
+      <h1>"TO DO" list</h1>
+      <form id="toDoList">
         <fieldset>
-            <input type="text" id="coseDaFare" name="coseDaFare"/>
-            <button type="submit" id="btnInvio" name="btnInvio">AGGIUNGI</button>
+          <input
+            type="text"
+            id="insertTask"
+            name="coseDaFare"
+            placeholder="Scrivi una task (es. studiare)"
+          />
+          <button type="submit" id="btnInvio" name="btnInvio">AGGIUNGI</button>
         </fieldset>
-    </form>
-    
-    <ul id="lista">
-    </ul>
+      </form>
+      <ul id="lista"></ul>
+    </div>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
