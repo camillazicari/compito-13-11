@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    background-color: fuchsia;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1271863211/it/foto/blocco-note-e-matita.jpg?s=612x612&w=0&k=20&c=YCMtH5mX50onwFHdfhNHMV2ER273GtN7L0AN7Fjh_n4=);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #middle {
@@ -46,6 +47,7 @@ fieldset {
     top: 50%;
     transform: translateY(-50%);
     margin-right: 1px;
+    width: 10%;
 }
 
 .completato {
