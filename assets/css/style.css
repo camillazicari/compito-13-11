@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: fuchsia;
 }
 
 #middle {
@@ -7,6 +8,8 @@ body {
 }
 
 fieldset {
+    background-color: white;
+    border-radius: 7px;
     padding: 10px;
     margin: 0 auto;
     width: 50%;
@@ -16,7 +19,25 @@ fieldset {
     width: 80%;
 }
 
-ul li {
+#lista {
+    padding: 0;
+    text-align: center;
+}
+
+#lista li {
+    padding: 5px;
     text-align: start;
+    position: relative;
     list-style: none;
+   border: 1px solid black;
+   border-radius: 5px;
+   margin-bottom: 5px;
+}
+
+#lista button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 1px;
 }
