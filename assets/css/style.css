@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url(https://media.istockphoto.com/id/1271863211/it/foto/blocco-note-e-matita.jpg?s=612x612&w=0&k=20&c=YCMtH5mX50onwFHdfhNHMV2ER273GtN7L0AN7Fjh_n4=);
+    background-image: url(https://img.freepik.com/foto-gratuito/promemoria-per-notebook-e-carta-su-sfondo-giallo-vista-dall-alto_169016-39196.jpg?semt=ais_hybrid);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 #btnInvio {
-    background-color:aqua;
+    background-color:#FDE94F;
     border-radius: 5px;
 }
 
