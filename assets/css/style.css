@@ -1,10 +1,16 @@
 body {
     text-align: center;
     background-color: fuchsia;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #middle {
     margin-top: 20em;
+}
+
+#btnInvio {
+    background-color:aqua;
+    border-radius: 5px;
 }
 
 fieldset {
@@ -40,4 +46,8 @@ fieldset {
     top: 50%;
     transform: translateY(-50%);
     margin-right: 1px;
+}
+
+.completato {
+    text-decoration: line-through;
 }

@@ -3,7 +3,6 @@ const btnInvio = document.getElementById("btnInvio");
 const lista = document.getElementById("lista");
 const frmToDoList = document.getElementById('toDoList');
 const listaTasks = [];
-let listItem;
 
 btnInvio.addEventListener("click", function (e) {
   e.preventDefault();
@@ -29,8 +28,11 @@ function addTasksArray() {
 function visualTasks() {
   lista.innerHTML = "";
   for (let i = 0; i < listaTasks.length; i++) {
-    listItem = document.createElement("li");
+    let listItem = document.createElement("li");
     listItem.innerText = listaTasks[i];
+    listItem.addEventListener('click', function() {
+        listItem.classList.toggle('completato')
+    });
     let btnDelete = document.createElement('button');
     btnDelete.setAttribute('type', 'button');
     btnDelete.setAttribute('onclick', 'deleteTask()');
@@ -46,8 +48,3 @@ function deleteTask(task) {
     visualTasks();
 }
 
-/*listItem.addEventListener('click', function {
-    let sbarrato = document.createElement('class');
-    sbarrato.setAttribute('name', 'sbarrato');
-    insertTask.appendChild(sbarrato);
-})*/
